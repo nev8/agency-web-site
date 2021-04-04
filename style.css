@@ -7,9 +7,42 @@
     --black: #000;
     --transition: .4s ease;
 }
+/****************
+Basic styles 
+****************/
 body {
     font-family: 'Roboto', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
+}
+/****************
+Nav 
+****************/
+.navbar {
+    border-top: 5px solid var(--orange);
+    background: black;
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand {
+    background: var(--orange);
+    font-style: italic;
+    padding: 15px 40px;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+.navbar-brand:hover {
+    color: black;
+    text-shadow: 0 0 2px white;
+    transition: var(--transition);
+}
+.navbar .nav-link {
+    color: var(--orange);
+    font-size: 20px;
+    margin: 0 10px;
+}
+.navbar .nav-link:hover {
+    color: var(--moka);
+    transition: var(--transition);
 }
